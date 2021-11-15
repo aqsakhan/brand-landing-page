@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>McCafé</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="cart.css">
+    <link rel="icon" type="image/png" href="https://www.mcdonalds.com/content/dam/usa/nfl/icons/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <!-- The nav and banner section -->
+    <div class="header-container">
+        <div class="header">
+            <img class="logo" src="assets//arches-logo.jpg">
+            <div class="nav">
+                <span><a href="index.html#drinks">Menu</a></span>
+                <span><a href="index.html#beverages">Exclusive Deals</a></span>
+                <span><a href="#footer">About</a></span>
+            </div>
+        </div>
+    </div>
+    <!-- shopping cart -->
+    <div class="card">
+        <div class="cart-container">
+            <div class="cart-header">
+                <h3 class="heading">Shopping Cart</h3>
+                <h5 class="action">Remove all</h5>
+            </div>
+            <!-- Product details -->
+            <div class="cart-items">
+                <div class="image-box">
+                    <img src="https://www.mcdonalds.com/is/image/content/dam/usa/nfl/nutrition/items/iconic/desktop/t-mcdonalds-caramel-macchiato.jpg?$Category_Desktop$" style="height:120px;">
+                </div>
+                <div class="about">
+                    <h1 class="title">Caramel Macchiato</h1>
+                </div>
+                <div class="counter">
+                    <div class="btn">+</div>
+                    <div class="count">1</div>
+                    <div class="btn">-</div>
+                </div>
+                <div class="prices">
+                    <div class="amount">$14</div>
+                    <div class="save"><u>Save for later</u></div>
+                    <div class="remove"><u>Remove</u></div>
+                </div>
+            </div>
+            <div class="cart-items pad">
+                <div class="image-box">
+                    <img src="https://www.mcdonalds.com/is/image/content/dam/usa/nfl/nutrition/items/iconic/desktop/t-mcdonalds-hot-tea.jpg?$Category_Desktop$" style="height:120px;">
+                </div>
+                <div class="about">
+                    <h1 class="title">Hot Tea</h1>
+                </div>
+                <div class="counter">
+                    <div class="btn">+</div>
+                    <div class="count">1</div>
+                    <div class="btn">-</div>
+                </div>
+                <div class="prices">
+                    <div class="amount">$3</div>
+                    <div class="save"><u>Save for later</u></div>
+                    <div class="remove"><u>Remove</u></div>
+                </div>
+            </div>
+            <hr> 
+            <div class="checkout">
+                <div class="total">
+                    <div>
+                        <div class="Subtotal">Sub-Total</div>
+                        <div class="items">2 items</div>
+                    </div>
+                        <div class="total-amount">$17</div>
+                </div>
+                <a href="#header"><span class="checkout-btn">Checkout</span></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="payment-card">
+        <div class="container">
+            <div class="cart-header" id="header">
+                <h3 class="heading"><a href="index.html">Back</a> </h3>
+            </div>
+            <!-- Payment options -->
+            <div class="payments" id="payments">
+                <h2>Address</h2>
+                <p>Please enter your address details</p> <br>
+                <form action="address" id="form">
+                    <label>First Name:</label> <input type="text" placeholder="Anna">
+                    <label>Last Name:</label> <input type="text" placeholder="Lenks"> <br>
+                    <label>Zip code:</label> <input type="text">
+                    <label>City:</label> <input type="text"> <br>
+                    <label>State:</label> <input type="text"> <br>
+                    <label for="w3review">Address:</label> <br> 
+                    <textarea name="address" rows="5" cols="40"></textarea>
+                </form>
+                <br>
+                <h3>Payment Options</h3> <br>
+                <form action="payment-options" id="form">
+                    <input type="radio" name="option"> <b>Add Debit/Credit/ATM Card</b> <br>
+                    <br>
+                    <label>Name on Card</label> <br>
+                    <input type="text" required> <br> <br>
+                    <label>Card Number</label> <br> 
+                    <input type="text" required> <br> <br>
+                    <label>Expiry Date</label> <br>
+                    <input type="text" placeholder="MM/YY" required> <br> <br>
+                    <label>Security Code</label> <br>
+                    <input type="text" required> <br> <br>
+                    <label>Zip/Postal Code</label> <br> 
+                    <input type="text" required> <br> <br>
+                    <input type="radio" name="option" > <b>Pay on Delivery</b>
+                </form>
+                <br>
+                <span class="confirm-btn"><a href="confirmation.html">Confirm Payment</a></span>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="footer" id="footer">
+        <div>
+            <img class="logo" src="assets/mccafe-seeklogo.com.svg" alt="logo">
+        </div>
+        <div class="footer-navigation">
+            <span><a href="index.html">Menu</a></span>
+            <span>About</span>
+            <span>T & C</span>
+        </div>
+        <div class="social-media">
+            <img src="assets/icons8-facebook.svg" alt="">
+            <img src="assets/icons8-instagram.svg" alt="">
+            <img src="assets/icons8-youtube.svg" alt="">
+            <img src="assets/icons8-twitter.svg" alt="">
+        </div>
+        <div class="rights">
+            <img class="logo" src="assets/mcdonald-s-seeklogo.com.svg">
+            <p>2021 McDonald's. All Rights Reserved</p>
+        </div>
+    </div>
+</body>
+</html>
